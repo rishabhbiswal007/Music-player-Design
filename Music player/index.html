@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="veiwport" content="width-=device width, intial-scale=1.0">
+    <title>Music Player Design - Rishabh Biswal</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d374c4dc40.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="container">
+    <div class="music-player">
+        <nav>
+            <div class="circle">
+                <i class="fa-solid fa-angle-left"></i>
+            </div>
+            <div class="circle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+        <img src="media/thumbnail.png" class="song-image">
+        <h1>Despacito</h1>
+        <p>Lusis Fonsi Ft. Puerto Rican</p>
+
+        <audio id="song">
+            <source src="media/Despacito.mp3" type="audio/mp3">
+        </audio>
+        <input type="range" value="0" id="progress">
+
+        <div class="controls">
+        <div><i class="fa-solid fa-backward"></i></div>
+        <div onclick="playpause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+        <div><i class="fa-solid fa-forward"></i></div>
+        </div>
+
+    </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
